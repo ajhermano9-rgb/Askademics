@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Askademics — Engineering Help Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Askademics</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#chat">Chat</a>
+      <a href="#tutoring">Tutoring</a>
+      <a href="#peer">Peer Learning</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <button id="mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Engineering help, when you need it.</h2>
+    <p>Public Q&A, live tutoring, and study groups — built for engineering students.</p>
+    <div class="buttons">
+      <a href="https://discord.gg/RPZNkrJVA" target="_blank" class="btn primary">Ask a Question</a>
+      <a href="#tutoring" class="btn secondary">Join a Session</a>
+    </div>
+  </section>
+
+  <section id="chat">
+    <h2>Public Chat for Questions</h2>
+    <p>Ask and answer questions in a shared space — collaborate and learn together.</p>
+    <div class="card-grid">
+      <div class="card">Math & Physics</div>
+      <div class="card">Structural Analysis</div>
+      <div class="card">Thermodynamics</div>
+    </div>
+  </section>
+
+  <section id="tutoring">
+    <h2>Live Video Tutoring</h2>
+    <p>Book one-on-one sessions with verified tutors.</p>
+    <div class="card-grid">
+      <div class="card">Maya Santos — Electrical Eng.</div>
+      <div class="card">John Reyes — Mechanical Eng.</div>
+      <div class="card">Carlo Dela Cruz — Civil Eng.</div>
+    </div>
+  </section>
+
+  <section id="peer">
+    <h2>Peer-to-Peer Learning</h2>
+    <p>Join or create study groups by subject, share notes, and schedule discussions.</p>
+    <div class="card-grid">
+      <div class="card">Statics Study Group</div>
+      <div class="card">Fluid Mechanics Team</div>
+      <div class="card">Coding Circle</div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-table">
+      <div class="price-card">
+        <h3>Free</h3>
+        <p>Access public Q&A</p>
+        <span>$0/month</span>
+      </div>
+      <div class="price-card premium">
+        <h3>Premium</h3>
+        <p>Unlimited tutoring + private groups</p>
+        <span>$9.99/month</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <p><strong>Is public chat free?</strong> Yes, anyone can ask or answer questions.</p>
+      <p><strong>How are tutors verified?</strong> Tutors submit credentials before approval.</p>
+      <p><strong>Can I form a study group?</strong> Yes, through the Peer Learning page.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn primary">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Askademics | Built for Engineering Students</p>
+    <a href="https://discord.gg/RPZNkrJVA" target="_blank">Join our Discord</a>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('mode-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
